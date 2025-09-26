@@ -394,7 +394,7 @@
 
             } catch (error) {
                 console.error("Webhook Error:", error);
-                errorMessageDiv.textContent = `Error: ${error.message}. Check your n8n workflow and webhook URL.`;
+                errorMessageDiv.textContent = `Error: ${error.message}. Something gone worng.`;
                 setUIState('idle');
                 initialPlaceholder.classList.remove('hidden'); // Show placeholder again on error
             }
@@ -458,6 +458,7 @@
     </script>
 </body>
 </html>
+
 
 
 
